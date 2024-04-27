@@ -1,0 +1,424 @@
+%   -------
+%   Pruebas
+%   -------
+% Main document:  astro.tex
+% bibliography:	  sec.bib
+% Compilación:	  pdflatex astro.tex
+%		  biber astro
+%		  pdflatex astro.tex
+%		  pdflatex astro.tex
+%
+% sino correr:	  make
+% ----------------------------------------------------------------------------
+% &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+% ----------------------------------------------------------------------------
+%\documentclass[12pt,a4paper,spanish]{article}
+
+\input{../../../tex/preambule-red}
+
+\DeclareLanguageMapping{spanish}{spanish-apa}
+%\addbibresource{bibexport.bib}
+\addbibresource{sec.bib}
+
+
+% comandos especiales
+\newcommand{\finej}{\hspace*{\fill}$\blacklozenge$}
+
+\hyphenation{
+	}
+
+%\newcommand\curso{5}
+
+
+\title{Apunte de Astronomía}
+\author{Lic. Sebastián Coca}
+\date{\small v.\number\year\number\month\number\day}
+% ----------------------------------------------------------------------------
+% &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+% ----------------------------------------------------------------------------
+\begin{document}
+%\begin{titlepage}
+%  % para generar el título del trabajo
+%  añslj añsldjfa sfj\par
+%  \bfseries{lalalal}\par
+%  {\scshape jjjaajajaj}
+%  \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black] % src: overleaf
+%    lala laal
+% https://creativecommons.org/licenses/by-sa/4.0/
+%  \end{tcolorbox}
+%\end{titlepage}
+
+\maketitle
+
+\chapter{Astronomía de posición}
+
+\section{Sistemas de referencia}
+\subsection{Sistemas de coordenadas matemáticas}
+\label{c.scm}
+
+En los siguientes links van a poder acceder a los vídeos de las clases
+preparadas para los temas desarrollados en la sección (\ref{c.scm}):
+
+\begin{itemize}
+  \item Parte 1: Sistemas de coordenadas matemáticos en 2D\\
+    \href{https://youtu.be/jZOEsT9U6XA}{https://youtu.be/jZOEsT9U6XA}
+  \item Parte 2: Sistemas de coordenadas matemáticos en 3D\\
+    \href{https://youtu.be/wEYLrErtwt8}{https://youtu.be/wEYLrErtwt8} \\
+    %\href{https://youtu.be/ENnXdLPZGPM}{https://youtu.be/ENnXdLPZGPM} \\
+\end{itemize}
+
+Más información sobre los sistemas de coordenadas pueden acceder en las
+siguientes páginas de wikipedia:
+\begin{itemize}
+  \item 
+    \href{https://es.wikipedia.org/wiki/Coordenadas\_cil\%C3\%ADndricas}
+    {Sistema de coordenadas cilíndricas}
+  \item  
+    \href{https://es.wikipedia.org/wiki/Coordenadas\_esf\%C3\%A9ricas}
+    {Sistema de coordenadas esféricas}
+\end{itemize}
+
+%https://www.lifeder.com/coordenadas-esfericas/
+% https://es.wikipedia.org/wiki/Coordenadas_esf%C3%A9ricas
+% https://es.wikipedia.org/wiki/Coordenadas_cil%C3%ADndricas
+
+\subsubsection*{Actividades (sistemas de coordenadas
+matemáticos)}
+\small
+\begin{enumerate}
+  \item Transformar las siguientes coordenadas bidimensionales y graficar:
+    \begin{enumerate}[a)]
+	\item De rectangulares a polares \big($(x;y)\to (r;\theta)$\big):\\
+	  $(3;4)$; \quad $(3;1)$; \quad $(5;5)$; \quad $(-3;-4)$; \quad $(-5;5)$;\\ 
+          $(5;-5)$; \quad $(3;-1)$; \quad $(-5;-5)$; \quad $(0;-3.5)$; \quad
+          $(-\sqrt{2};0)$. 
+        \item De polares a rectangulares \big($(r;\theta) \to (x;y)$\big):\\
+          $(2;\pi/2)$; \quad $(\sqrt{2};\pi)$; \quad $(3.5;7\pi/6)$; \quad
+          $(7;-\pi/3)$; \quad $(\sqrt{1};0)$; \\
+          $(\sqrt{3};\pi)$; \quad $(4;2\pi/3)$; \quad $(4;-\pi/2)$; \quad $(0;0)$;
+          \quad $(\sqrt{1};-\pi)$.
+    \end{enumerate}
+
+  \item Transformar las siguientes coordenadas tridimensionales a los otros
+    sistemas y graficar:
+    \begin{enumerate}[a)]
+      \item $(x;y;z)$: \\
+	$(1;1;1)$; \quad $(-3;0;4)$; \quad $(-1;-1;-1)$; \quad $(2;2;0)$; \quad
+        $(2;2;0)$; \quad $(0;2;2)$; \quad $(3;2;-1)$.
+      \item $(r;\phi;z)$: \\
+        $(\sqrt{2};\pi/4;0)$; \quad $(\sqrt{2};5\pi/4;0)$; \quad $(5;\pi/6;-1)$;
+	\quad $(0;\pi;0)$; \quad $(3;0;0)$; \quad $(3;2\pi;0)$; \quad $(2;3\pi/2;1)$.
+      \item $(\rho;\theta;\phi)$:\\
+        $(\sqrt{3};\pi/4;\pi/4)$; \quad $(2;\pi;0)$; \quad $(5;0;\pi)$; \quad
+        $(\sqrt{3};3\pi/4;5\pi/4)$; \quad $(2;3\pi/4;3\pi/2)$; \quad
+	$(\sqrt{4};\pi/2;\pi)$; \quad $(\sqrt{9};\pi/3;7\pi/8)$.
+    \end{enumerate}
+\end{enumerate}
+\normalsize
+
+\subsection{Sistemas de coordenadas astronómicos}
+\label{c.sca}
+
+En los siguientes links van a poder acceder a los vídeos de las clases
+preparadas para los temas desarrollados en la sección (\ref{c.sca}):
+
+\begin{itemize}
+  \item Parte 1: Sistemas de coordenadas astronómicas. Definiciones generales y
+    construcción del Sistema de Coordenadas Horizontales.\\
+    \href{https://youtu.be/20HwdOHqj-U}{https://youtu.be/20HwdOHqj-U}
+  \item Parte 2: Sistemas de coordenadas astronómicas. Definiciones específicas
+    y construcción del Sistema de Coordenadas Ecuatoriales Horarias y
+    Coordenadas Ecuatoriales Absolutas.\\
+    \href{https://youtu.be/TtVTJF01tew}{https://youtu.be/TtVTJF01tew} \\
+  \item Parte 3: Sistemas de coordenadas astronómicas. Aplicaciones prácticas.\\
+    \href{https://youtu.be/srMmv1g9UmI}{https://youtu.be/srMmv1g9UmI} \\
+\end{itemize}
+
+Más información sobre los sistemas de coordenadas astronómicos pueden acceder en
+las siguientes páginas de wikipedia y en los libros recomendados:
+\begin{itemize}
+  \item 
+    \href{https://es.wikipedia.org/w/index.php?title=Coordenadas_horizontales}
+    {Coordenadas horizontales en español}
+  \item 
+    \href{https://en.wikipedia.org/wiki/Horizontal_coordinate_system}
+    {Coordenadas horizontales en inglés}
+  \item  
+    \href{https://es.wikipedia.org/wiki/Coordenadas_ecuatoriales}
+    {Coordenadas ecuatoriales en español}
+  \item  
+    \href{https://es.wikipedia.org/wiki/Coordenadas_horarias}
+    {Coordenadas ecuatoriales horarias en español}
+  \item 
+    \href{https://en.wikipedia.org/wiki/Equatorial_coordinate_system}
+    {Coordenadas ecuatoriales en inglés}
+  \item 
+    \href{https://es.wikipedia.org/wiki/Coordenadas_celestes}
+    {Coordenadas astronómicas en español}
+  \item
+    \href{https://en.wikipedia.org/wiki/Celestial_coordinate_system}
+    {Coordenadas astronómicas en inglés}
+\end{itemize}
+
+¡¡¡INCLUIR LOS LIBROS!!!
+
+\subsubsection*{Actividades (coordenadas astronómicas)}
+\small
+
+\begin{enumerate}
+  \item Realizar esquemas de la Esfera Celeste indicando horizonte, ecuador
+    celeste, polos celestes, cenit, nadir, meridiano del lugar, primer vertical
+    y puntos cardinales, tal como aparecerían para observadores situados en los
+    siguientes puntos sobre la esfera terrestre:
+    \begin{enumerate}[a)]
+      \item sobre el Ecuador Terrestre;
+      \item en el polo Sur, discuta como sería en el polo Norte;
+      \item un lugar con latitud $\phi = + 30\grm$;
+      \item un lugar con latitud \(\phi = - 60\grm\).
+    \end{enumerate}
+
+  \item En los esquemas del Problema anterior, señalar la trayectoria aparente
+    que sigue una estrella desde su culminación superior hasta 6 horas después
+    de la misma.
+
+  \item ¿En qué parte de la esfera celeste la altura de los astros aumenta
+    continuamente y en qué parte disminuye continuamente? ¿Qué sucede con el
+    Ángulo Horario \(H\)?
+
+  \item Para todos los problemas anteriores, abrir y configurar el programa
+    Stellarium de tal manera de comprobar los resultados obtenidos en ellos.
+    Realizar para ello capturas de pantallas ilustrativas.
+
+  \item Determinar si la estrella es visible desde Londres bajo las siguientes
+    condiciones, justificar cada caso:
+    \begin{enumerate}[a)]
+      \item Sus coordenadas ecuatoriales horarias son: \( (-3^h; 30\grm)\) el día
+	19 de Octubre a las 22h. Determinar de manera aproximada su ascensión
+	recta \(\alpha\).
+      \item Sus coordenadas ecuatoriales absolutas son: \( (18^h\,32^m; -20\grm) \)
+	el día 21 de Junio a media noche.
+      \item Sus coordenadas horizontales son: \( (275\grm; -30\grm) \) el día 1 de
+	enero a las 5h.
+    \end{enumerate}
+    Para los casos en los que la estrella no sea visible en ese momento,
+    determinar en qué momento serán visibles.
+
+  \item ¿Cuáles son las coordenadas ecuatoriales absolutas del Sol en los
+    equinoccios y los solsticios?
+
+  \item Calcular, de manera aproximada cuando no sea posible exacto, el acimut
+    del Sol en la ciudad de Córdoba para su salida y puesta, en los equinoccios
+    y los solsticios (\(\varphi_{Cba.} = -31\grm\,25'\,15''\)).
+
+  \item En el momento de su culminación superior, determinar las distancias
+    cenitales máxima y mínima del Sol para la Ciudad de Córdoba. ¿En qué época
+    del año ocurren estos eventos?
+
+  \item ¿A partir de qué latitudes será posible observar el Sol a medianoche?
+
+  \item Determinar, para la ciudad de Córdoba, el rango de declinaciones para
+    que una estrella sea circumpolar (perpetuamente visible). ¿Cuál será para
+    que sea perpetuamente invisible?
+
+  \item Para un observador situado en la ciudad de Córdoba y en el momento de
+    culminación inferior del punto Aries, indicar las coordenadas horizontales y
+    las ecuatoriales horarias de los siguientes puntos sobre la esfera celeste:
+    \begin{enumerate}[a)]
+      \item Polo Sur celeste;
+      \item Punto cardinal Norte;
+      \item Cenit;
+      \item Punto Vernal;
+      \item Punto de Libra.
+    \end{enumerate}
+
+  \item Determinar el Tiempo Sidéreo para los siguientes momentos del año:
+    \begin{enumerate}
+      \item 2 de enero @ 19:23$\h$.
+      \item 8 de marzo @ 0:43$\h$.
+      \item 12 de junio @ 17:15$\h$.
+      \item 29 de octubre @ 23:50$\h$.
+      \item 17 de diciembre @ 7:35$\h$.
+    \end{enumerate}
+    
+  \item Determinar que objetos son visibles el 19 de octubre a las $23\h$. Dar
+    las coordenadas horizontales aproximadas y su ángulo horario. Justificar sus
+    respuestas.
+    \begin{enumerate}
+      \item $(\alpha;\delta)=(0^h\, 30^m;70\grm)$
+      \item $(\alpha;\delta)=(0^h\, 30^m;-70\grm)$
+      \item $(\alpha;\delta)=(7^h\, 58^m\, 19^s;-30\grm\, 34'\, 55'')$
+      \item $(\alpha;\delta)=(19^h\, 3^m\, 19^s;-54\grm\,38')$
+      \item $(\alpha;\delta)=(13^h\,1^m\,59^s; -15\grm\, 23'\, 19'')$
+    \end{enumerate}
+
+  \item Un persona observa una estrella el día 23 de septiembre a las 23$\h$ y
+    registra sus coordenadas horizontales: $(A;z)=(3\grm;23.5\grm)$. Responder y
+    justificar cada pregunta:
+    \begin{enumerate}
+      \item ¿La estrella ya realizó su culminación superior?
+      \item ¿Es posible afirmar que la declinación de la estrella es positiva?
+      \item Determinar su ascensión recta.
+      \item Determinar sus coordenadas ecuatoriales absolutas para 15 días
+	después de la observación realizada
+      \item Calcular sus coordenadas horizontales 15 días antes y posteriores de
+	la observación al mismo horario.
+      \item Determinar hasta que fecha será visible la estrella en el mismo
+	horario.
+    \end{enumerate}
+\end{enumerate}
+
+\subsubsection*{Problemas de exámenes}
+\begin{enumerate}
+  \item Una estrella posee las siguientes coordenadas en Córdoba:
+    \((A;h)=(210\grm;60\grm)\) el día 17/12 a las \(5\,h\). Determinar:
+    \begin{enumerate}
+      \item Tiempo Sidereo.
+      \item Coordenadas Ecuatoriales absolutas y horarias.
+      \item Graficar y ubicar el punto Vernal.
+    \end{enumerate}
+
+  \item Si tenemos una estrella con \( (\alpha; \delta) = (20^h\,30^{min};
+    -15\grm) \) en un lugar con \( \phi = 15\grm \), y a las \( 21^h \) se ve a
+    la estrella con \( (A;h)= (90\grm; 55\grm) \), responder:
+    \begin{enumerate}
+      \item ¿Cuánto tiempo falta para que se oculte?
+      \item Calcular el TS y fecha en que es observada la estrella.
+    \end{enumerate}
+
+\end{enumerate}
+\normalsize
+
+
+\chapter{Movimiento de los astros}
+
+\section{Movimiento elíptico: Leyes de Kepler}
+\label{c.kepler}
+
+En los siguientes links van a poder acceder a los vídeos de las clases
+preparadas para los temas desarrollados en la sección (\ref{c.kepler}):
+
+\begin{itemize}
+  \item Movimiento de los planetas -- Ecuación de posición en coordenadas
+    polares sobre una elipse.\\
+    \href{https://youtu.be/c3I5bRt4-v8}{https://youtu.be/c3I5bRt4-v8}
+%  \item Movimiento de los cuerpos celestes -- secciones cónicas.
+%    \href{lala}{lalal}
+\end{itemize}
+
+\subsubsection*{Actividades (Leyes de Kepler)}
+\small
+
+\begin{enumerate}
+  \item Luego de ver el vídeo, realizar las cuentas del minuto 14:40 donde se
+    pasa de la ecuación:
+    \[
+      r'\,^2 = \big(r\sen(\theta)\big)^2 + \big(2ae + r \cos (\theta)\big)^2,
+    \]
+    a la ecuación:
+    \[
+      r'\,^2 = r^2 + 4ae(ae+r\cos(\theta)).
+    \]
+    \item Luego, utilizar la última ecuación obtenida y combinarla en conjunto
+      con la ecuación de la elipse:
+      \[
+	r + r' = 2a,
+      \]
+      y llegar a la ecuación de la elipse en coordendas polares:
+      \[
+	r = \dfrac{a(1-e^2)}{1+e\cos(\theta)} \qquad (0\le e < 1)
+      \]
+    \item Calcular el radio vector $r$ para todos los planetas del Sistema Solar
+      en su perihelio y afelio.
+    \item Calcular la velocidades para el afelio y perihelio de los planetas del
+      punto anterior con las siguientes expresiones:
+      \[
+	v_p^2=\dfrac{GM(1+e)}{r_p} = \dfrac{GM}{a}\left(\dfrac{1+e}{1-e}\right)
+	\]
+      \[
+	v_a^2 = \dfrac{GM(1-e)}{r_a} =
+	\dfrac{GM}{a}\left(\dfrac{1-e}{1+e}\right)
+	\]
+    \item Durante una observación astronómica se detecta a un NEO (Near Earth
+      Object) desconocido hasta el momento. El grupo de observación desea
+      catalogarlo y realizan mediciones de sus parámetros. Entre los parámetros
+      que determinan, está la velocidad del mismo: \mbox{$v_{NEO}=26.2\kms$}.
+      Responder:
+      % a = 1.3 UA (NEO), e=0 => 26.2 km/s
+      % a = 3AU; e=0.1 => vel. perihelio = 19 km/s
+      % vel. de los asteroides =  10-70 km/s
+      \begin{enumerate}[a)]
+	\item Si el cuerpo cumple con las leyes de Kepler, ¿su velocidad
+	  permanece constante o varía? Justificar.
+	\item Supongamos que también nos proveen con otro dato, su excentricidad
+	  $e=0$, ¿qué podemos decir acerca de la órbita del mismo y a qué tipo
+	  de movimiento corresponde? Calcular su período sabiendo que su semieje
+	  mayor es $a=1.3\,UA$.
+	\item Ahora suponga que $e=0.1$ y que la velocidad que se midió
+	  corresponde a su punto más próximo a la Tierra, determinar su periodo,
+	  sus longitudes y velocidades de perigeo y apogeo, y su semieje mayor
+	  y menor.
+      \end{enumerate}
+    \item La estrella \emph{TRAPPIST-1} es un sistema que posee 7 exoplanetas.
+      La información de sus exoplanetas se puede obtener del siguiente enlace:
+      \href{http://exoplanet.eu/catalog/}{http://exoplanet.eu/catalog/}.
+      \begin{enumerate}
+	\item Verificar si los exoplanetas corresponden a un sistema Kepleriano.
+	\item Comparar las velocidades orbitales de los planetas entre sí, en el
+	  periastro y apoastro y discutir sobre el resultado obtenido.
+	\item Ahora considerar el sistema planetario \emph{HD 40307} y realizar
+	  las mismas actividades que los puntos anteriores. Discutir sobre los
+	  resultados alcanzados entre ambos sistemas.
+      \end{enumerate}
+
+\end{enumerate}
+
+\subsubsection*{Problemas de exámenes}
+\begin{enumerate}
+  \item Una nave espacial cuya masa es \( m=50\kg \) orbita a Marte: \Mars, a
+    una distancia de la superficie de \(1000\km\), determinar:
+    \begin{enumerate}
+      \item Sus energías para que sea una órbita circular. Calcular \( a_c,\,
+	T,\, v\,\mathrm{ y }\, \omega \).
+      \item Calcular el impulso necesario para cambiar su órbita circular a una
+	elíptica con \( e=0.75 \) y semieje menor \( b=1000\km + R_\mathMars \).
+	Utilizar Hohmann para el cálculo.
+    \end{enumerate}
+
+  \item La basura espacial son objetos pequeños que se mueven a altas
+    velocidades. Suponga que se tiene un tornillo con \( m=50\g \) viajando a
+    \( 150\kms \) a \( 1000\km \) de altura de la superficie terrestre. Se
+    quiere ``limpiar'' la zona y llevar esta basura a una órbita al doble de
+    alto. Responder:
+    \begin{enumerate}
+      \item\label{l:1} \( a_c,\, T,\, \omega\,\mathrm{ y }\, v \) que posee en su órbita.
+      \item Calcular las energías previas y posteriores al cambio de órbita.
+      \item Determinar los impulsos necesarios para realizar el cambio de órbita
+	y el tiempo que demoran.
+      \item Igual al punto \ref{l:1}) pero en la nueva órbita.
+    \end{enumerate}
+
+
+\end{enumerate}
+\normalsize
+ 
+
+
+% =============================================================================
+% =============================================================================
+% =============================================================================
+
+
+\end{document}
+% ---------------
+\clearpage
+
+\printbibliography
+%\printbibheading
+
+% ---------------
+\clearpage
+
+\input{anexo}
+
+\end{document}
+
